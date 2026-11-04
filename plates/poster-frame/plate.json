@@ -1,0 +1,29 @@
+{
+	"title": "A framed poster on a painted brick wall",
+	"name": "poster-frame",
+	"width": 2304,
+	"height": 1728,
+	"photo": "photo.jpg",
+	"screens": [
+		{
+			"kind": "print",
+			"corners": [
+				[694.11, 210.6],
+				[1658.68, 209.04],
+				[1667.42, 1532.95],
+				[691.98, 1535.08]
+			],
+			"aspect": 0.73,
+			"box": [688, 206, 983, 1333],
+			"shading": "shading.jpg",
+			"noise": 0.25,
+			"reflection": "reflection.jpg"
+		}
+	],
+	"source": {
+		"licence": "CC0-1.0",
+		"model": "FLUX.2 [klein] 4B (imagine --flux2), upscaled 2x with SwinIR-L",
+		"prompt": "a blank white poster in a thin black metal frame hanging on a painted white brick wall, soft daylight from the side, photo, 35mm, realistic, no text, no letters, no typography",
+		"seed": 51
+	}
+}

@@ -1,0 +1,62 @@
+{
+  "name": "@arraypress/mockups-plates",
+  "version": "0.1.0",
+  "description": "Photo plates for @arraypress/mockups: real scenes (billboards, a shopfront fascia, a bus-shelter lightbox, a framed poster, a laptop) with each sign's corners, shading, occluders and reflections, so art composites into them like a print in the photo.",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js",
+      "default": "./index.js"
+    },
+    "./plates/*": "./plates/*",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "plates",
+    "README.md",
+    "PLATES.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "add": "node tools/add.js",
+    "check": "node tools/check.js",
+    "index": "node tools/index.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "keywords": [
+    "billboard",
+    "bus-shelter",
+    "mockup",
+    "mockups",
+    "photo",
+    "plates",
+    "poster",
+    "shopfront"
+  ],
+  "author": "David Sherlock",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arraypress/mockups-plates.git"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "peerDependencies": {
+    "@arraypress/mockups": ">=0.3.0"
+  },
+  "devDependencies": {
+    "@arraypress/mockups": "file:../mockups",
+    "sharp": "^0.35.5"
+  }
+}

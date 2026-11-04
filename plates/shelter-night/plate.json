@@ -1,0 +1,29 @@
+{
+	"title": "A bus-shelter 6-sheet lightbox at night, wet street",
+	"name": "shelter-night",
+	"width": 2304,
+	"height": 1728,
+	"photo": "photo.jpg",
+	"screens": [
+		{
+			"kind": "backlit",
+			"corners": [
+				[878.41, 423.85],
+				[1379.32, 359.13],
+				[1375.19, 1298.71],
+				[877.08, 1218.38]
+			],
+			"aspect": 0.67,
+			"box": [874, 356, 509, 946],
+			"shading": "shading.jpg",
+			"noise": 0.36
+		}
+	],
+	"source": {
+		"licence": "CC0-1.0",
+		"model": "FLUX.2 [klein] 4B (imagine --flux2), upscaled 2x with SwinIR-L",
+		"prompt": "a blank white backlit advertising lightbox panel glowing in a modern glass bus shelter at night, wet pavement with reflections, empty street, photo, 35mm, realistic, no text, no letters, no typography",
+		"seed": 41,
+		"note": "aspect set to a 6-sheet's 2:3 (the lens can't be solved from one vanishing point)"
+	}
+}

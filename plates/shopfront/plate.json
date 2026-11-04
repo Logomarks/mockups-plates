@@ -1,0 +1,29 @@
+{
+	"title": "A painted shop fascia, overcast London street",
+	"name": "shopfront",
+	"width": 2100,
+	"height": 1728,
+	"photo": "photo.jpg",
+	"screens": [
+		{
+			"kind": "paint",
+			"corners": [
+				[330, 235],
+				[1971, 259],
+				[1972, 535],
+				[332, 516]
+			],
+			"aspect": 5.91,
+			"box": [327, 232, 1648, 306],
+			"shading": "shading.jpg",
+			"noise": 0.28
+		}
+	],
+	"source": {
+		"licence": "CC0-1.0",
+		"model": "FLUX.2 [klein] 4B (imagine --flux2), upscaled 2x with SwinIR-L",
+		"prompt": "a blank cream painted wooden shop fascia sign board above a traditional shopfront with a large display window and a door, London terrace street, overcast daylight, photo, 35mm, realistic, no text, no letters, no typography",
+		"seed": 32,
+		"note": "204 px cropped from the right (a neighbour's sign, a parked car's plate); a sticker's pseudo-lettering painted out; corners set on the fascia's recessed panel"
+	}
+}

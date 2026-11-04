@@ -1,0 +1,31 @@
+{
+	"title": "A roadside billboard on a steel mast, golden hour",
+	"name": "billboard-day",
+	"width": 2304,
+	"height": 1728,
+	"photo": "photo.jpg",
+	"screens": [
+		{
+			"kind": "print",
+			"corners": [
+				[527.07, 260.52],
+				[1775.47, 181.98],
+				[1780.29, 894.56],
+				[506.31, 907.64]
+			],
+			"aspect": 1.89,
+			"box": [503, 178, 1281, 733],
+			"shading": "shading.jpg",
+			"noise": 0.24,
+			"mask": "mask.png",
+			"reflection": "reflection.jpg"
+		}
+	],
+	"source": {
+		"licence": "CC0-1.0",
+		"model": "FLUX.2 [klein] 4B (imagine --flux2), upscaled 2x with SwinIR-L",
+		"prompt": "an empty blank white roadside billboard on a single steel mast beside a country road, golden hour, photo, 35mm, realistic, no text, no letters, no typography",
+		"seed": 12,
+		"note": "the mast's bracket in front of the board masked by hand (sources/billboard-day-mask.png)"
+	}
+}

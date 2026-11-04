@@ -1,0 +1,30 @@
+{
+	"title": "A laptop on an oak desk by a window",
+	"name": "laptop-desk",
+	"width": 2304,
+	"height": 1728,
+	"photo": "photo.jpg",
+	"screens": [
+		{
+			"kind": "backlit",
+			"corners": [
+				[649.43, 333.44],
+				[1781.3, 363.28],
+				[1734.97, 1094.16],
+				[614.82, 969.8]
+			],
+			"aspect": 1.6,
+			"box": [611, 330, 1174, 768],
+			"shading": "shading.jpg",
+			"noise": 0.38,
+			"glow": 0.08
+		}
+	],
+	"source": {
+		"licence": "CC0-1.0",
+		"model": "FLUX.2 [klein] 4B (imagine --flux2), upscaled 2x with SwinIR-L",
+		"prompt": "an open silver laptop with a blank white screen on a light oak desk by a window, a ceramic mug beside it, soft morning light, the keyboard in soft focus, shallow depth of field, photo, 50mm, realistic, no text, no letters, no typography",
+		"seed": 83,
+		"note": "aspect set to a 16:10 display"
+	}
+}

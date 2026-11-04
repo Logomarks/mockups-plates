@@ -1,0 +1,31 @@
+{
+	"title": "A floodlit roadside billboard at dusk",
+	"name": "billboard-dusk",
+	"width": 2304,
+	"height": 1728,
+	"photo": "photo.jpg",
+	"screens": [
+		{
+			"kind": "print",
+			"corners": [
+				[641.52, 544.05],
+				[1702.59, 430.8],
+				[1710.79, 937.41],
+				[599.06, 956.19]
+			],
+			"aspect": 2.45,
+			"box": [596, 427, 1118, 533],
+			"shading": "shading.jpg",
+			"noise": 0.33,
+			"mask": "mask.png",
+			"reflection": "reflection.jpg"
+		}
+	],
+	"source": {
+		"licence": "CC0-1.0",
+		"model": "FLUX.2 [klein] 4B (imagine --flux2), upscaled 2x with SwinIR-L",
+		"prompt": "a blank white roadside billboard on a steel mast at dusk, deep blue evening sky, two floodlights on arms lighting the board from below, countryside road, photo, 35mm, realistic, no text, no letters, no typography",
+		"seed": 22,
+		"note": "the floodlights and their flare in front of the board masked by hand (sources/billboard-dusk-mask.png)"
+	}
+}

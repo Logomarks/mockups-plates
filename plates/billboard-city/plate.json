@@ -1,0 +1,29 @@
+{
+	"title": "A billboard on a brick building, sunny street",
+	"name": "billboard-city",
+	"width": 2244,
+	"height": 1728,
+	"photo": "photo.jpg",
+	"screens": [
+		{
+			"kind": "print",
+			"corners": [
+				[545, 655],
+				[1799, 143],
+				[1822, 960],
+				[531, 1143]
+			],
+			"aspect": 3.57,
+			"box": [528, 140, 1297, 1006],
+			"shading": "shading.jpg",
+			"noise": 0.33
+		}
+	],
+	"source": {
+		"licence": "CC0-1.0",
+		"model": "FLUX.2 [klein] 4B (imagine --flux2), upscaled 2x with SwinIR-L",
+		"prompt": "a large blank white billboard on the side of a red brick building above a quiet city street, sunny afternoon, photo, 35mm, realistic, no text, no letters, no typography",
+		"seed": 72,
+		"note": "60 px cropped from the left (a shop sign); a small shop sign's pseudo-lettering painted out; corners set on the poster face inside the frame"
+	}
+}
