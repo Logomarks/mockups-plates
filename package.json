@@ -56,7 +56,7 @@
     "@arraypress/mockups": ">=0.3.0"
   },
   "devDependencies": {
-    "@arraypress/mockups": "file:../mockups",
+    "@arraypress/mockups": "^0.3.0",
     "sharp": "^0.35.5"
   }
 }
