@@ -1,7 +1,7 @@
 /**
- * @module @arraypress/mockups-plates
+ * @module @logomarks/mockups-plates
  *
- * Photo plates for @arraypress/mockups, by name. Each is a plate description
+ * Photo plates for @logomarks/mockups, by name. Each is a plate description
  * (its photo's size, each screen's corners, kind and maps) with `base` set to
  * where its files are, for `loadPlate`. Written by tools/index.js: edit the
  * plates' `plate.json`, not this.

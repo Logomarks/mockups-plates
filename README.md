@@ -1,26 +1,26 @@
-# @arraypress/mockups-plates
+# @logomarks/mockups-plates
 
-Photo plates for [`@arraypress/mockups`](https://github.com/arraypress/mockups). Each plate is a photo of a real-looking scene (a roadside billboard, a shop fascia, a bus-shelter lightbox, a framed poster, a laptop) with each sign's corners, kind, shading, occluders and reflections. The core's compositor warps your art into the sign and multiplies it by the blank sign's own light, so it reads as printed in the photo.
+Photo plates for [`@logomarks/mockups`](https://github.com/Logomarks/mockups). Each plate is a photo of a real-looking scene (a roadside billboard, a shop fascia, a bus-shelter lightbox, a framed poster, a laptop) with each sign's corners, kind, shading, occluders and reflections. The core's compositor warps your art into the sign and multiplies it by the blank sign's own light, so it reads as printed in the photo.
 
 Kept apart from the core because photos are heavy. Every photo is free to redistribute: see [PLATES.md](PLATES.md).
 
 ## Install
 
 ```bash
-npm install @arraypress/mockups @arraypress/mockups-plates sharp
+npm install @logomarks/mockups @logomarks/mockups-plates sharp
 ```
 
 ## Usage
 
 ```js
-import { plate, loadPlate, loadArt, renderImage } from '@arraypress/mockups/node';
-import { PLATES } from '@arraypress/mockups-plates';
+import { plate, loadPlate, loadArt, renderImage } from '@logomarks/mockups/node';
+import { PLATES } from '@logomarks/mockups-plates';
 
 const p = await loadPlate(PLATES['billboard-dusk']);      // photo and maps inlined
 const jpeg = await renderImage(plate(p, { art: await loadArt('cover.png') }), { format: 'jpeg' });
 ```
 
-In a browser, `loadPlate` from `@arraypress/mockups/browser` fetches the same files (each plate's `base` is a URL next to this module).
+In a browser, `loadPlate` from `@logomarks/mockups/browser` fetches the same files (each plate's `base` is a URL next to this module).
 
 ## API
 

@@ -1,7 +1,7 @@
 {
-  "name": "@arraypress/mockups-plates",
-  "version": "0.1.0",
-  "description": "Photo plates for @arraypress/mockups: real scenes (billboards, a shopfront fascia, a bus-shelter lightbox, a framed poster, a laptop) with each sign's corners, shading, occluders and reflections, so art composites into them like a print in the photo.",
+  "name": "@logomarks/mockups-plates",
+  "version": "0.1.1",
+  "description": "Photo plates for @logomarks/mockups: real scenes (billboards, a shopfront fascia, a bus-shelter lightbox, a framed poster, a laptop) with each sign's corners, shading, occluders and reflections, so art composites into them like a print in the photo.",
   "type": "module",
   "main": "index.js",
   "types": "index.d.ts",
@@ -21,6 +21,7 @@
     "plates",
     "README.md",
     "PLATES.md",
+    "CHANGELOG.md",
     "LICENSE"
   ],
   "scripts": {
@@ -53,10 +54,11 @@
     "registry": "https://registry.npmjs.org/"
   },
   "peerDependencies": {
-    "@arraypress/mockups": ">=0.3.0"
+    "@logomarks/mockups": ">=0.4.3"
   },
   "devDependencies": {
-    "@arraypress/mockups": "^0.3.0",
+    "@logomarks/mockups": "^0.4.3",
     "sharp": "^0.35.5"
-  }
+  },
+  "homepage": "https://www.npmjs.com/package/@logomarks/mockups-plates"
 }

@@ -1,12 +1,12 @@
 /**
- * @arraypress/mockups-plates — every plate is well formed, its files are there and in the package, its provenance is
+ * @logomarks/mockups-plates — every plate is well formed, its files are there and in the package, its provenance is
  * recorded, and it loads and composites.
  */
 
 import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile, stat } from 'node:fs/promises';
-import { checkPlate, plate, loadPlate } from '@arraypress/mockups/node';
+import { checkPlate, plate, loadPlate } from '@logomarks/mockups/node';
 import { PLATES, PLATE_NAMES } from '../index.js';
 
 const ART = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 10"><rect width="30" height="10" fill="#c0392b"/></svg>';

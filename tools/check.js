@@ -9,7 +9,7 @@
 import { parseArgs } from 'node:util';
 import { mkdir, writeFile, readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
-import { loadPlate, plate, renderImage } from '@arraypress/mockups/node';
+import { loadPlate, plate, renderImage } from '@logomarks/mockups/node';
 import { testCard } from './card.js';
 
 /**

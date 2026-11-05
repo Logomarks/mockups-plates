@@ -35,9 +35,9 @@ export async function writeIndex() {
 	const plates = await readPlates();
 	const body = plates.map(({ name, plate }) => `\t${JSON.stringify(name)}: entry(${JSON.stringify(name)}, ${JSON.stringify(plate)}),`).join('\n');
 	const js = `/**
- * @module @arraypress/mockups-plates
+ * @module @logomarks/mockups-plates
  *
- * Photo plates for @arraypress/mockups, by name. Each is a plate description
+ * Photo plates for @logomarks/mockups, by name. Each is a plate description
  * (its photo's size, each screen's corners, kind and maps) with \`base\` set to
  * where its files are, for \`loadPlate\`. Written by tools/index.js: edit the
  * plates' \`plate.json\`, not this.
@@ -69,7 +69,7 @@ ${body}
 export const PLATE_NAMES = Object.freeze(Object.keys(PLATES));
 `;
 	const names = plates.map((p) => JSON.stringify(p.name)).join(' | ') || 'never';
-	const dts = `import type { Plate } from '@arraypress/mockups';
+	const dts = `import type { Plate } from '@logomarks/mockups';
 
 /** A plate's name. */
 export type PlateName = ${names};

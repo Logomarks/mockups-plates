@@ -19,7 +19,7 @@
 import { parseArgs } from 'node:util';
 import { readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
-import { makePlate, savePlate } from '@arraypress/mockups/node';
+import { makePlate, savePlate } from '@logomarks/mockups/node';
 import { writeIndex } from './index.js';
 import { checkRender } from './check.js';
 import { point, corners, number } from './args.js';

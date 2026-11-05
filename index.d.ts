@@ -1,4 +1,4 @@
-import type { Plate } from '@arraypress/mockups';
+import type { Plate } from '@logomarks/mockups';
 
 /** A plate's name. */
 export type PlateName = "billboard-city" | "billboard-day" | "billboard-dusk" | "laptop-desk" | "poster-frame" | "shelter-night" | "shopfront";
