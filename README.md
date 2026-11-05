@@ -1,8 +1,6 @@
 # @logomarks/mockups-plates
 
-Photo plates for [`@logomarks/mockups`](https://github.com/Logomarks/mockups). Each plate is a photo of a real-looking scene (a roadside billboard, a shop fascia, a bus-shelter lightbox, a framed poster, a laptop) with each sign's corners, kind, shading, occluders and reflections. The core's compositor warps your art into the sign and multiplies it by the blank sign's own light, so it reads as printed in the photo.
-
-Kept apart from the core because photos are heavy. Every photo is free to redistribute: see [PLATES.md](PLATES.md).
+Photo plates for [`@logomarks/mockups`](https://github.com/Logomarks/mockups): real-looking scenes with blank signs that your art is composited into, so it reads as printed in the photo.
 
 ## Install
 
@@ -10,7 +8,7 @@ Kept apart from the core because photos are heavy. Every photo is free to redist
 npm install @logomarks/mockups @logomarks/mockups-plates sharp
 ```
 
-## Usage
+## Quick start
 
 ```js
 import { plate, loadPlate, loadArt, renderImage } from '@logomarks/mockups/node';
@@ -22,28 +20,21 @@ const jpeg = await renderImage(plate(p, { art: await loadArt('cover.png') }), { 
 
 In a browser, `loadPlate` from `@logomarks/mockups/browser` fetches the same files (each plate's `base` is a URL next to this module).
 
-## API
+## What's in it
 
-| Export | |
-|---|---|
-| `PLATES` | Every plate by name: a plate description with `base` set to where its files are. |
-| `PLATE_NAMES` | The names. |
+- `PLATES`: every plate by name, with `base` set to where its files are
+- `PLATE_NAMES`: `billboard-city`, `billboard-day`, `billboard-dusk`, `laptop-desk`, `poster-frame`, `shelter-night`, `shopfront`
+- [Photo plates](https://github.com/Logomarks/mockups/blob/main/docs/photo-plates.md) in the mockups docs: how `plate` composites the art, and its options
+- [Adding a plate](https://github.com/Logomarks/mockups-plates/blob/main/docs/adding-a-plate.md): the `tools/add.js` steps and the four kinds
+- [PLATES.md](https://github.com/Logomarks/mockups-plates/blob/main/PLATES.md): each photo's source and licence (every one free to redistribute)
 
-## Adding a plate
+## Links
 
-1. Take or generate a photo whose sign is blank: white for print and lightboxes, any light paint for a painted board. Keep text, logos and people out of it. If the photo shows a design on the sign, also keep a copy with the sign blank (`--blank`).
-2. Add it. The sign's corners are found as the brightest even quadrilateral; pass `--near x,y` to pick one, or `--corners "x,y x,y x,y x,y"` to set them yourself:
+- [Docs](https://github.com/Logomarks/mockups-plates/tree/main/docs)
+- [Changelog](https://github.com/Logomarks/mockups-plates/blob/main/CHANGELOG.md)
+- [Licence](https://github.com/Logomarks/mockups-plates/blob/main/LICENSE)
+- [GitHub](https://github.com/Logomarks/mockups-plates)
 
-   ```bash
-   node tools/add.js photo.jpg --name billboard-dusk --kind print --licence CC0-1.0 --url https://…
-   ```
+## Licence
 
-   This writes `plates/billboard-dusk/` (`photo.jpg`, `plate.json`, `shading.jpg`, and `mask.png` when something stands in front of the sign), rewrites `index.js`, and renders a test card into the sign at `check/billboard-dusk.jpg`.
-3. Look at the check render at 100%: the grid follows the sign and the circle is round. If not, adjust `--aspect`, `--corners` or `--soften` and run it again. Occluders darker than the sign are found automatically (`--dark` sets how much darker). For anything else in front of the sign, such as a lamp or a sunlit bracket, paint a mask at the photo's size, white where it stands in front. Keep it in `sources/` and pass `--mask`.
-4. Add the photo's source and licence to [PLATES.md](PLATES.md).
-
-Kinds: `print` (paper or vinyl lit by the scene), `paint` (a painted board, its colour divided out), `backlit` (a lightbox or a display: glows), `glass` (a print behind glass: its reflections laid back over the art).
-
-## License
-
-MIT © ArrayPress Limited. The photos are credited in [PLATES.md](PLATES.md).
+MIT © ArrayPress Limited; author David Sherlock. The photos are credited in [PLATES.md](https://github.com/Logomarks/mockups-plates/blob/main/PLATES.md).
