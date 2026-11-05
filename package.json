@@ -43,7 +43,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arraypress/mockups-plates.git"
+    "url": "git+https://github.com/Logomarks/mockups-plates.git"
   },
   "engines": {
     "node": ">=20.0.0"
